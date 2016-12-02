@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.yurynoh.myapplication.MainActivity">
+    tools:context="com.example.yurynoh.myapplication.MainActivity"
+    android:weightSum="1">
 
     <Chronometer
         android:layout_width="match_parent"
@@ -23,7 +24,7 @@
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="53dp" >
 
         <RadioButton
             android:layout_width="match_parent"
@@ -39,4 +40,36 @@
             android:id="@+id/radioButton2"
             android:layout_weight="1" />
     </RadioGroup>
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="315dp"
+        android:id="@+id/calendarView"
+        android:visibility="invisible"
+        android:layout_weight="1.04" />
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/afterBook">
+
+        <Button
+            android:text="예약완료"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookDone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookMsg"
+            android:layout_weight="1" />
+    </LinearLayout>
 </LinearLayout>
