@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                     bookTime.setBase(SystemClock.elapsedRealtime());
                     bookTime.start();
                     bookMsg.setText("");
+                    dateTime.check(R.id.datePick);
                 } else if(v.getId() == R.id.bookDone) {
                     if(year == -1 || month == -1 || day == -1) {
                         date.show();
